@@ -1,0 +1,32 @@
+# Object files
+*.o
+*.obj
+
+# Compiled binaries
+bin/
+
+# Standard Executables
+*.exe
+*.out
+*.app
+a.out
+
+# Libraries
+*.lib
+*.a
+*.dll
+*.so
+*.dylib
+
+# Debug files
+*.dSYM/
+*.pdb
+*.su
+
+# Data directory
+data/
+
+# Logs directory
+logs/
+
+extensions.txt

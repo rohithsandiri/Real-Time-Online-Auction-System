@@ -1,0 +1,15 @@
+services:
+  auction-server:
+    image: aayanksinghai/auction-system:latest
+    container_name: auction-server
+    ports:
+      - "8085:8085"
+    volumes:
+      # This ensures your .dat files persist across container restarts
+      - auction-data:/usr/src/app/data
+      - auction-logs:/usr/src/app/logs
+    restart: unless-stopped
+
+volumes:
+  auction-data:
+  auction-logs:
