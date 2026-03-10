@@ -248,7 +248,7 @@ While (candidates remain):
 
 ```bash
 # Clone the repository
-git clone https://github.com/aayanksinghai/Real-Time-Online-Auction-System.git
+git clone https://github.com/rohithsandiri/Real-Time-Online-Auction-System.git
 cd Real-Time-Online-Auction-System
 
 # Build the project (compiles server + client, creates data/ and logs/ directories)
@@ -274,7 +274,7 @@ No source code, no compiler needed. Only Docker is required.
 
 ```bash
 # Step 1: Pull the image and start the server container
-docker run -d -p 8085:8085 --name auction-server aayanksinghai/auction-system:latest
+docker run -d -p 8085:8085 --name auction-server rohithsandiri/auction-system:latest
 
 # Step 2: Extract the pre-compiled client binary from the container
 docker cp auction-server:/usr/src/app/bin/client ./client
@@ -297,7 +297,7 @@ The `Jenkinsfile` defines a three-stage pipeline:
 
 1. **Checkout** -- Clones the repository from GitHub
 2. **Build Image** -- Builds the Docker image (compilation happens inside the Dockerfile)
-3. **Push to DockerHub** -- Pushes the image as `aayanksinghai/auction-system:latest`
+3. **Push to DockerHub** -- Pushes the image as `rohithsandiri/auction-system:latest`
 
 ## Protocol
 
